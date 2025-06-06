@@ -56,13 +56,13 @@
   <br>
   <br><br>
 
-  <!--- login page for admin by admin(sumit)  ---------->
+  <!--- Página de inicio de sesión para el administrador   ---------->
   <form method="post">
     {% csrf_token %}
     <div class="container register-form">
       <div class="form">
         <div class="note">
-          <p>Admin Login Page</p>
+          <p>Página de Inicio de Sesion del Administrador</p>
         </div>
 
         <div class="form-content">
@@ -70,20 +70,20 @@
             <div class="col-md-6">
 
               <div class="form-group">
-                {% render_field form.username class="form-control" placeholder="Username" %}
+                {% render_field form.username class="form-control" placeholder="Nombre de usuario" %}
               </div>
 
             </div>
             <div class="col-md-6">
 
               <div class="form-group">
-                {% render_field form.password class="form-control" placeholder="Password" %}
+                {% render_field form.password class="form-control" placeholder="Contraseña" %}
               </div>
 
             </div>
           </div>
           <button type="submit" class="btnSubmit">Login</button>
-          <div class="text-center">Do not have account? <a href="adminsignup">Signup here</a></div>
+          <div class="text-center">¿No tienes una cuenta? <a href="adminsignup">Regístrate aquí</a></div>
         </div>
       </div>
     </div>

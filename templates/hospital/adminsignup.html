@@ -61,38 +61,38 @@
 
 
 
-  <!--- signup page for admin by admin(sumit)  ---------->
+  <!--- Página de registro para el administrador  ---------->
   <form method="post">
     {% csrf_token %}
     <div class="container register-form">
       <div class="form">
         <div class="note">
-          <p>Add New Admin To Hospital</p>
+          <p>Agregar Nuevo Administrador al Hospital/p>
         </div>
 
         <div class="form-content">
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                {% render_field form.first_name class="form-control" placeholder="First Name" %}
+                {% render_field form.first_name class="form-control" placeholder="Nombre" %}
               </div>
               <div class="form-group">
-                {% render_field form.username class="form-control" placeholder="Username" %}
+                {% render_field form.username class="form-control" placeholder="Nombre de usuario" %}
               </div>
 
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                {% render_field form.last_name class="form-control" placeholder="Last Name" %}
+                {% render_field form.last_name class="form-control" placeholder="Apellido" %}
               </div>
               <div class="form-group">
-                {% render_field form.password class="form-control" placeholder="Password" %}
+                {% render_field form.password class="form-control" placeholder="Contraseña" %}
               </div>
 
             </div>
           </div>
-          <button type="submit" class="btnSubmit">Submit</button>
-          <div class="text-center">Already have an account? <a href="adminlogin">Login here</a></div>
+          <button type="submit" class="btnSubmit">Registrar</button>
+          <div class="text-center">Already have an account? <a href="adminlogin">Inicia sesión aquí</a></div>
         </div>
       </div>
     </div>

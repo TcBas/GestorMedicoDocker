@@ -57,13 +57,13 @@
   <br>
   <br><br>
 
-  <!--- login page for patient by admin(sumit)  ---------->
+  <!--- Página de inicio de sesión para paciente (por admin sumit)  ---------->
   <form method="post">
     {% csrf_token %}
     <div class="container register-form">
       <div class="form">
         <div class="note">
-          <p>Patient Login Page</p>
+          <p>Pagina de Inicio de Sesion del Paciente</p>
         </div>
 
         <div class="form-content">
@@ -71,20 +71,20 @@
             <div class="col-md-6">
 
               <div class="form-group">
-                {% render_field form.username class="form-control" placeholder="Username" %}
+                {% render_field form.username class="form-control" placeholder="Nombre de Usuario" %}
               </div>
 
             </div>
             <div class="col-md-6">
 
               <div class="form-group">
-                {% render_field form.password class="form-control" placeholder="Password" %}
+                {% render_field form.password class="form-control" placeholder="Contraseña" %}
               </div>
 
             </div>
           </div>
-          <button type="submit" class="btnSubmit">Login</button>
-          <div class="text-center">Do not have account? <a href="patientsignup">Signup here</a></div>
+          <button type="submit" class="btnSubmit">Iniciar Sesion</button>
+          <div class="text-center">¿No tienes una cuenta? <a href="patientsignup">Registrate aqui</a></div>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>A simple, clean, and responsive HTML invoice template</title>
+  <title>Plantilla simple, limpia y responsiva de factura HTML</title>
 
   <style>
     .invoice-box {
@@ -113,14 +113,14 @@
         <table>
           <tr>
             <td class="title">
-              <h1>Hospital Management</h1>
+              <h1>Gestion Hospitalaria</h1>
             </td>
 
             <td>
 
-              Admit Date: {{admitDate}}<br>
-              Release Date: {{todayDate}}<br>
-              Days Spent: {{day}}
+              Fecha de Ingreso: {{admitDate}}<br>
+              Fecha de Alta: {{todayDate}}<br>
+              Dias Hospedado: {{day}}
             </td>
           </tr>
         </table>
@@ -132,13 +132,13 @@
         <table>
           <tr>
             <td>
-              Patient Name : {{name}}<br>
-              Patient Mobile : {{mobile}}<br>
-              Patient Addres : {{address}}<br>
+              Nombre del Paciente: {{name}}<br>
+              Telefono del Paciente: {{mobile}}<br>
+              Direccion del Paciente: {{address}}<br>
             </td>
 
             <td>
-              Doctor Name :<br>
+              Nombre del Doctor :<br>
               {{assignedDoctorName}}<br>
 
             </td>
@@ -149,7 +149,7 @@
 
     <tr class="heading">
       <td>
-        Disease and Symptoms
+        Enfermedad y Sintomas
       </td>
       <td>
 
@@ -168,7 +168,7 @@
       </td>
 
       <td>
-        Price
+        Precio
       </td>
     </tr>
     <form method="post">
@@ -176,41 +176,41 @@
 
       <tr class="item">
         <td>
-          Room Charge (Per Day)
+          Costo por Habitacion (Per Day)
         </td>
 
         <td>
-          <input type="number" name="roomCharge" placeholder="In Rupees" value="">
-        </td>
-      </tr>
-
-      <tr class="item">
-        <td>
-          Doctor Fee
-        </td>
-
-        <td>
-          <input type="number" name="doctorFee" placeholder="In Rupees" value="">
+          <input type="number" name="roomCharge" placeholder="En Soles" value="">
         </td>
       </tr>
 
       <tr class="item">
         <td>
-          Medicine Cost
+          Honorarios del Doctor
         </td>
 
         <td>
-          <input type="number" name="medicineCost" placeholder="In Rupees" value="">
+          <input type="number" name="doctorFee" placeholder="En Soles" value="">
+        </td>
+      </tr>
+
+      <tr class="item">
+        <td>
+          Costos de Medicamentos
+        </td>
+
+        <td>
+          <input type="number" name="medicineCost" placeholder="En Soles" value="">
         </td>
       </tr>
 
       <tr class="item last">
         <td>
-          Other Charge
+          Otros Cargos
         </td>
 
         <td>
-          <input type="number" name="OtherCharge" placeholder="In Rupees" value="">
+          <input type="number" name="OtherCharge" placeholder="En Soles" value="">
         </td>
       </tr>
 
@@ -218,7 +218,7 @@
         <td></td>
 
         <td>
-          <input type="submit" name="submit" value="Generate Bill">
+          <input type="submit" name="submit" value="Generar Factura">
         </td>
       </tr>
 

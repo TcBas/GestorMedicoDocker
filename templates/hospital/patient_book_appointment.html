@@ -56,22 +56,22 @@
 {% endif %}
 
 
-<!------ add appointment page by patient(sumit)  ---------->
+<!------ página para reservar cita por paciente (sumit)  ---------->
 <form method="post">
   {% csrf_token %}
   <div class="container register-form">
     <div class="form">
       <div class="note">
-        <p>Book Appointment Details</p>
+        <p>Detalles para Reservar Cita</p>
       </div>
       <div class="form-content">
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">
-              {% render_field appointmentForm.description class="form-control" placeholder="Description" %}
+              {% render_field appointmentForm.description class="form-control" placeholder="Descripcion" %}
             </div>
             <div class="form-group">
-              {% render_field appointmentForm.doctorId class="form-control" placeholder="doctor" %}
+              {% render_field appointmentForm.doctorId class="form-control" placeholder="Doctor" %}
             </div>
             
 
@@ -80,7 +80,7 @@
           </div>
 
         </div>
-        <button type="submit" class="btnSubmit">Book</button>
+        <button type="submit" class="btnSubmit">Reservar</button>
       </div>
     </div>
   </div>

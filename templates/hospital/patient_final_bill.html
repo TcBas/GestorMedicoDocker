@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>A simple, clean, and responsive HTML invoice template</title>
+  <title>Una plantilla de factura HTML simple, limpia y responsiva</title>
 
   <style>
     .invoice-box {
@@ -118,14 +118,14 @@
         <table>
           <tr>
             <td class="title">
-              <h1>Hospital Management</h1>
+              <h1>Gestion Hospitalaria</h1>
             </td>
 
             <td>
 
-              Admit Date: {{admitDate}}<br>
-              Release Date: {{todayDate}}<br>
-              Days Spent: {{day}}
+              Fecha de ingreso: {{admitDate}}<br>
+              Fecha de alta: {{todayDate}}<br>
+              Dias hospitalizado: {{day}}
             </td>
           </tr>
         </table>
@@ -137,13 +137,13 @@
         <table>
           <tr>
             <td>
-              Patient Name : {{name}}<br>
-              Patient Mobile : {{mobile}}<br>
-              Patient Addres : {{address}}<br>
+              Nombre del paciente: {{name}}<br>
+              Telefono del paciente: {{mobile}}<br>
+              Direccion del paciente: {{address}}<br>
             </td>
 
             <td>
-              Doctor Name :<br>
+              Nombre del doctor :<br>
               {{assignedDoctorName}}<br>
 
             </td>
@@ -154,7 +154,7 @@
 
     <tr class="heading">
       <td>
-        Disease and Symptoms
+        Enfermedad y Sintomas
       </td>
       <td>
 
@@ -173,13 +173,13 @@
       </td>
 
       <td>
-        Price
+        Precio
       </td>
     </tr>
 
     <tr class="item">
       <td>
-        Room Charge of {{day}} Days
+        Cargo por habitacion por {{day}} dias
       </td>
 
       <td>
@@ -189,7 +189,7 @@
 
     <tr class="item">
       <td>
-        Doctor Fee
+        Honorarios del Doctor
       </td>
 
       <td>
@@ -199,7 +199,7 @@
 
     <tr class="item">
       <td>
-        Medicine Cost
+        Costo de Medicamentos
       </td>
 
       <td>
@@ -209,7 +209,7 @@
 
     <tr class="item last">
       <td>
-        Other Charge
+        Otros Cargos
       </td>
 
       <td>
@@ -221,7 +221,7 @@
       <td></td>
 
       <td>
-        Total Rupees : {{total}}
+        Total en Soles : {{total}}
       </td>
     </tr>
 
@@ -229,7 +229,7 @@
 </div>
 <br><br>
 <div class="download">
-  <a style="background:red; width:500px;" href="{% url 'download-pdf' patientId  %}">Download</a>
+  <a style="background:red; width:500px;" href="{% url 'download-pdf' patientId  %}">Descargar</a>
 </div>
 
 
