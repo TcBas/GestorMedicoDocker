@@ -2,6 +2,11 @@
 
 Este es un sistema de gestión médica empaquetado en Docker, desarrollado como parte del trabajo académico. Está diseñado para ejecutarse fácilmente en cualquier máquina con Docker instalado.
 
+## Presentado por:
+1. Sebastian Alberto Tapia Tito
+2. Clever Ronny Quenta Chura
+3. Cruz paredes soledad epifanía
+
 ---
 
 ## 📁 ¿Cómo ejecutar este proyecto?
